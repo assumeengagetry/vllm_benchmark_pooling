@@ -1,0 +1,402 @@
+{
+  "metadata": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "tokenizer": "BAAI/bge-small-en-v1.5",
+    "seq_lens": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "num_prompts": 256,
+    "num_warmup_iters": 2,
+    "num_iters": 5,
+    "convert": "auto",
+    "dtype": "float16",
+    "max_model_len": 512,
+    "max_num_seqs": 256,
+    "max_num_batched_tokens": 8192,
+    "gpu_memory_utilization": 0.5,
+    "tensor_parallel_size": 1,
+    "trust_remote_code": false,
+    "compare_st": false,
+    "st_batch_size": 256,
+    "seed": 42,
+    "vllm_version": "0.19.0",
+    "transformers_version": "4.57.6",
+    "torch_version": "2.10.0+cu128",
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 2080 Ti"
+    ]
+  },
+  "results": [
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 8,
+      "actual_mean_seq_len": 8.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 0.12089479900896549,
+      "total_wall_time_std_s": 0.002676977900486986,
+      "requests_per_sec": 2117.543534532161,
+      "input_tokens_per_sec": 16940.34827625729,
+      "batch_avg_latency_s": 0.00047224530862877145,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 8.0,
+        "wall_times_s": [
+          0.11535243902471848,
+          0.12299167999299243,
+          0.12222724899766035,
+          0.12089479900896549,
+          0.12009917199611664
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 16,
+      "actual_mean_seq_len": 16.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 0.12343717800104059,
+      "total_wall_time_std_s": 0.0004501683505158138,
+      "requests_per_sec": 2073.9294606835706,
+      "input_tokens_per_sec": 33182.87137093713,
+      "batch_avg_latency_s": 0.0004821764765665648,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 16.0,
+        "wall_times_s": [
+          0.12306385301053524,
+          0.12317303600138985,
+          0.12386104100733064,
+          0.12343717800104059,
+          0.12427530798595399
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 32,
+      "actual_mean_seq_len": 32.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 0.1370866910147015,
+      "total_wall_time_std_s": 0.003409410230046536,
+      "requests_per_sec": 1867.4314632960684,
+      "input_tokens_per_sec": 59757.80682547419,
+      "batch_avg_latency_s": 0.0005354948867761777,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 32.0,
+        "wall_times_s": [
+          0.13934769399929792,
+          0.13132696200045757,
+          0.1370866910147015,
+          0.1390469089965336,
+          0.13214917000732385
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 64,
+      "actual_mean_seq_len": 64.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 0.16668656599358656,
+      "total_wall_time_std_s": 0.001275103489158539,
+      "requests_per_sec": 1535.81662969678,
+      "input_tokens_per_sec": 98292.26430059392,
+      "batch_avg_latency_s": 0.0006511193984124475,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 64.0,
+        "wall_times_s": [
+          0.16450846201041713,
+          0.16668656599358656,
+          0.16669762000674382,
+          0.1685005170002114,
+          0.166201528016245
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 128,
+      "actual_mean_seq_len": 128.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 0.2940006679855287,
+      "total_wall_time_std_s": 0.008645103846486507,
+      "requests_per_sec": 870.7463209321716,
+      "input_tokens_per_sec": 111455.52907931796,
+      "batch_avg_latency_s": 0.0011484401093184715,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 128.0,
+        "wall_times_s": [
+          0.2760535559791606,
+          0.28026119398418814,
+          0.2940006679855287,
+          0.2960701799893286,
+          0.2964596529782284
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 256,
+      "actual_mean_seq_len": 256.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 0.560930380015634,
+      "total_wall_time_std_s": 0.015002356317776003,
+      "requests_per_sec": 456.3846229773914,
+      "input_tokens_per_sec": 116834.4634822122,
+      "batch_avg_latency_s": 0.0021911342969360703,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 256.0,
+        "wall_times_s": [
+          0.5543577719945461,
+          0.5612534039828461,
+          0.5253805220127106,
+          0.5683360469993204,
+          0.560930380015634
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 512,
+      "actual_mean_seq_len": 512.0,
+      "num_prompts": 256,
+      "enforce_eager": true,
+      "convert": "auto",
+      "total_wall_time_s": 1.232662832015194,
+      "total_wall_time_std_s": 0.004833819835090278,
+      "requests_per_sec": 207.68047299802458,
+      "input_tokens_per_sec": 106332.40217498859,
+      "batch_avg_latency_s": 0.0048150891875593516,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 512.0,
+        "wall_times_s": [
+          1.2250554730126169,
+          1.2402002000017092,
+          1.2322196020104457,
+          1.232662832015194,
+          1.2341214419866446
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 8,
+      "actual_mean_seq_len": 8.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 0.12875098799122497,
+      "total_wall_time_std_s": 0.0009387693445450733,
+      "requests_per_sec": 1988.33425664623,
+      "input_tokens_per_sec": 15906.67405316984,
+      "batch_avg_latency_s": 0.0005029335468407226,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 8.0,
+        "wall_times_s": [
+          0.12848188998759724,
+          0.12875098799122497,
+          0.13064647201099433,
+          0.1278276469965931,
+          0.1290501160256099
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 16,
+      "actual_mean_seq_len": 16.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 0.13535469199996442,
+      "total_wall_time_std_s": 0.002390606168266077,
+      "requests_per_sec": 1891.3271214866145,
+      "input_tokens_per_sec": 30261.23394378583,
+      "batch_avg_latency_s": 0.000528729265624861,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 16.0,
+        "wall_times_s": [
+          0.13226981001207605,
+          0.13691410698811524,
+          0.13042997298180126,
+          0.13535469199996442,
+          0.13560463199974038
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 32,
+      "actual_mean_seq_len": 32.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 0.15843671298353001,
+      "total_wall_time_std_s": 0.004711752169880169,
+      "requests_per_sec": 1615.7871189022458,
+      "input_tokens_per_sec": 51705.187804871865,
+      "batch_avg_latency_s": 0.0006188934100919141,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 32.0,
+        "wall_times_s": [
+          0.14744058999349363,
+          0.15177826001308858,
+          0.15843671298353001,
+          0.15942224900936708,
+          0.15848938599810936
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 64,
+      "actual_mean_seq_len": 64.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 0.20163631299510598,
+      "total_wall_time_std_s": 0.013836944454376979,
+      "requests_per_sec": 1269.6125821652645,
+      "input_tokens_per_sec": 81255.20525857693,
+      "batch_avg_latency_s": 0.0007876418476371327,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 64.0,
+        "wall_times_s": [
+          0.20660968098673038,
+          0.2216644310101401,
+          0.20163631299510598,
+          0.1797026550048031,
+          0.19428594299824908
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 128,
+      "actual_mean_seq_len": 128.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 0.2868524120131042,
+      "total_wall_time_std_s": 0.004192650309409772,
+      "requests_per_sec": 892.4449970750297,
+      "input_tokens_per_sec": 114232.9596256038,
+      "batch_avg_latency_s": 0.0011205172344261882,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 128.0,
+        "wall_times_s": [
+          0.28371258100378327,
+          0.28424689298844896,
+          0.2877575729798991,
+          0.2868524120131042,
+          0.2954072160064243
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 256,
+      "actual_mean_seq_len": 256.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 0.5370420630206354,
+      "total_wall_time_std_s": 0.005504549826412842,
+      "requests_per_sec": 476.68519400530346,
+      "input_tokens_per_sec": 122031.40966535769,
+      "batch_avg_latency_s": 0.002097820558674357,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 256.0,
+        "wall_times_s": [
+          0.537720905005699,
+          0.5370420630206354,
+          0.5365726730087772,
+          0.5490188309922814,
+          0.5326302159810439
+        ]
+      }
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "backend": "vllm",
+      "seq_len_target": 512,
+      "actual_mean_seq_len": 512.0,
+      "num_prompts": 256,
+      "enforce_eager": false,
+      "convert": "auto",
+      "total_wall_time_s": 1.1932980169949587,
+      "total_wall_time_std_s": 0.008357960223810974,
+      "requests_per_sec": 214.53148865920014,
+      "input_tokens_per_sec": 109840.12219351047,
+      "batch_avg_latency_s": 0.004661320378886558,
+      "timed_iters": 5,
+      "embedding_dim": 384,
+      "extra": {
+        "generated_mean_seq_len": 512.0,
+        "wall_times_s": [
+          1.1987065249995794,
+          1.1932980169949587,
+          1.2121025650121737,
+          1.1874715180019848,
+          1.193287217989564
+        ]
+      }
+    }
+  ]
+}
