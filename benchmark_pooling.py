@@ -62,10 +62,10 @@ def build_prompts(
     special_token_count = get_min_model_visible_tokens(tokenizer)
     content_token_budget = max(0, target_token_len - special_token_count)
     vocab = (
-        "the quick brown fox jumps over a lazy dog and then runs away fast "
-        "machine learning embedding model inference serving latency throughput "
-        "benchmark neural network transformer attention head layer norm weight "
-        "gradient descent optimizer batch size epoch loss accuracy metric score"
+        "Through a series of events, he becomes an official Beyonder (one who is affiliated with the story’s Seven Orthodox Churches), and tries to find out why the original Klein committed suicide while trying to eventually return home."
+        "Finding himself in a world reminiscent of late Victorian era England, Zhou Mingrui (now Klein Moretti) searches for a way to go home."
+        "After reproducing a ritual that presumably caused his transmigration, he masquerades as a god-like entity and forms an organization known as the 'Tarot Club'."
+        "He is also later questioned by the police about his friends’ suicides; it is revealed that the police have mystical powers. People with mystical powers are called Beyonders. "
     ).split()
 
     prompts: list[str] = []
