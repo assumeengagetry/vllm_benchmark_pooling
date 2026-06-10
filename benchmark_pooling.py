@@ -16,12 +16,6 @@ from typing import Any, Optional
 
 import numpy as np
 
-try:
-    from transformers import AutoTokenizer
-except ImportError:
-    print("ERROR: transformers is required. Install it before running this script.")
-    sys.exit(1)
-
 
 @dataclass
 class EmbeddingBenchResult:
